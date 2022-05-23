@@ -118,21 +118,19 @@ const App = () => {
           const username = command.split(" ")[1].split("@")[1];
           if (username) {
             setActive(true);
-            setSpotlightUser(user => { return username });
-            setMessages([]);
+            setSpotlightUser(user => username);
+            setMessages(messages => []);
           }
           modSpotlightAction = true;
         }
         // Command to remove spotlight
         if (handlerName === config.commands.removingSpotlight) {
-          setSpotlightUser(user => { return '' });
           setActive(false);
-          setMessages([]);
+          setSpotlightUser(user => '');
+          setMessages(messages => []);
           modSpotlightAction = true;
         }
       }
-
-      console.log(stateRef);
 
       // Check for messages by someone who is spotlit
       if (

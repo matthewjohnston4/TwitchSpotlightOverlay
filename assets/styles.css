@@ -50,6 +50,7 @@
 .overlaySpotlight__root h1 {
     display: inline-block;
     font-weight: 700;
+    line-height: 1.2;
     margin: 0;
 }
 
@@ -69,16 +70,16 @@ h1 img.emoticon {
 
 .overlaySpotlight__messages {
     list-style: none;
-    margin-top: 1rem;
+    margin: 0;
     max-height: 40vh;
     overflow-y: hidden;
-    padding-left: 0;
+    padding: 0;
 }
 
 .overlaySpotlight__messages li {
     display: none;
     line-height: 1.25;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     transition: font-size 0.3s opacity 0.3s;
 }
 
