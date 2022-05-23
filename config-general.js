@@ -4,12 +4,6 @@ window.config = {
     spotlight: "!spotlight",
     removingSpotlight: "!spotlightRemove",
   },
-  handlerOptions: {
-    removalMethod: "startsWithText", // one of "fullText", "startsWithText", or "index"
-    removalDebounce: 3, // how many seconds to wait between allowing index removal use
-  },
-  useListSymbols: true, // Should a bullet symbol be added to each item?
-  listSymbol: "•", // the bullet symbol you want to use. Can be any unicode symbol or standard emoji
   position: {
     horizontal: "right", // one of `left`, `right`, or `middle`
     fillMethod: "downwards", // one of `fromCentre`, `upwards`, or `downwards`
@@ -56,7 +50,6 @@ window.config = {
   twitchEmotes: true, // set to false to leave emote text as text
   sounds: {
     activate: "assets/sounds/addition.wav",
-    newItem: "assets/sounds/addition.wav",
-    completeItem: "assets/sounds/success.wav",
+    newMessage: "assets/sounds/addition.wav",
   },
 };
