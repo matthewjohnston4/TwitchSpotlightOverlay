@@ -2,6 +2,9 @@
 
 A simple OBS overlay to allow a Twitch channel's broadcaster or mods to spotlight any chat user. The spotlit user's messages then appear in the overlay, with 4 messages shown at any one time, in reverse order.
 
+<img width="467" alt="image" src="https://user-images.githubusercontent.com/986185/169917250-7afa1ea1-7742-47d1-add4-6f84bcab8586.png">
+
+
 ## Installation
 
 If you want to use this overlay, you'll need OBS or similar and be comfortable editing a settings file for configuration.
