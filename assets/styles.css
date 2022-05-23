@@ -1,0 +1,120 @@
+.overlaySpotlight {
+    margin: 0;
+    padding: 0;
+}
+
+.overlaySpotlight__holder {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.overlaySpotlight__root {
+    box-sizing: border-box;
+    font-weight: 500;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, height 0.5s;
+}
+
+.overlaySpotlight__root--h-left {
+    justify-self: start;
+}
+
+.overlaySpotlight__root--h-right {
+    justify-self: end;
+}
+
+.overlaySpotlight__root--h-middle {
+    justify-self: center;
+}
+
+.overlaySpotlight__root--v-downwards {
+    align-self: start;
+}
+
+.overlaySpotlight__root--v-upwards {
+    align-self: end;
+}
+
+.overlaySpotlight__root--v-fromCentre {
+    align-self: center;
+}
+
+.overlaySpotlight__root--active {
+    opacity: 1;
+}
+
+.overlaySpotlight__root h1 {
+    display: inline-block;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 img.emoticon {
+    height: 30px;
+    margin-bottom: -4px;
+}
+
+.overlaySpotlight__listItem img.emoticon {
+    height: 22px;
+    margin-bottom: -4px;
+}
+
+.overlaySpotlight__listItem {
+    display: flex;
+}
+
+.overlaySpotlight__messages {
+    list-style: none;
+    margin-top: 1rem;
+    max-height: 40vh;
+    overflow-y: hidden;
+    padding-left: 0;
+}
+
+.overlaySpotlight__messages li {
+    display: none;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    transition: font-size 0.3s opacity 0.3s;
+}
+
+.overlaySpotlight__messages li:nth-child(1) {
+    display: block;
+    font-size: 90%;
+}
+
+.overlaySpotlight__messages li:nth-child(2) {
+    display: block;
+    font-size: 75%;
+    opacity: 75%;
+}
+
+.overlaySpotlight__messages li:nth-child(3) {
+    display: block;
+    font-size: 75%;
+    opacity: 50%;
+}
+
+.overlaySpotlight__messages li:nth-child(4) {
+    display: block;
+    font-size: 75%;
+    opacity: 25%;
+}
+
+@keyframes backgroundAnimate {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
